@@ -1,0 +1,7 @@
+{
+  "event_id": "CONTINUITY-RECOVERY-BASELINE-001",
+  "finding": "Earlier session artifacts are not present in the current persistent corpus repository.",
+  "decision": "Do not count earlier session rows, pass rates, or repair outcomes as verified until original JSONL, audit CSV, repair logs, and manifests are recovered and independently rerun.",
+  "required_recovery_artifacts": ["shards/*.jsonl", "audits/*.csv", "repairs/*.json", "manifests/*.json"],
+  "status": "open"
+}

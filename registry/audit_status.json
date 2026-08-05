@@ -1,0 +1,14 @@
+{
+  "status_version": "1.0.0",
+  "required_per_shard": [
+    "domain_contract",
+    "deterministic_math_physics_signal_audit",
+    "safety_and_claim_scope_audit",
+    "label_blind_diversity_audit",
+    "corpus_duplicate_and_leakage_audit",
+    "cross_domain_contradiction_audit",
+    "repair_regression_audit_if_repaired",
+    "human_or_domain_expert_review"
+  ],
+  "release_rule": "A deterministic pass alone is insufficient for training approval."
+}

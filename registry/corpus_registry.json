@@ -1,0 +1,27 @@
+{
+  "registry_version": "1.0.0",
+  "program": {
+    "name": "Motor-LLM QA Corpus",
+    "candidate_target_rows": 710000,
+    "approved_training_rows": 0,
+    "verified_persisted_candidate_rows": 0,
+    "historical_session_rows": null,
+    "historical_session_status": "unverified_artifacts_not_recovered"
+  },
+  "domains": {
+    "D01": {"name": "电机原理与电磁设计", "target_rows": 100000},
+    "D02": {"name": "轴承诊断与润滑", "target_rows": 100000},
+    "D03": {"name": "振动诊断与转子动力学", "target_rows": 100000},
+    "D04": {"name": "MCSA电流诊断", "target_rows": 50000},
+    "D05": {"name": "变频器与功率电子", "target_rows": 60000},
+    "D06": {"name": "绝缘与可靠性", "target_rows": 50000},
+    "D07": {"name": "瞬态工况与起动", "target_rows": 40000},
+    "D08": {"name": "标准与试验", "target_rows": 25000},
+    "D09": {"name": "传动与负载", "target_rows": 40000},
+    "D10": {"name": "信号处理与测量", "target_rows": 35000},
+    "D11": {"name": "热管理与冷却", "target_rows": 35000},
+    "D12": {"name": "安全/拒答/不确定性", "target_rows": 25000},
+    "D13": {"name": "多故障耦合与维修决策", "target_rows": 50000}
+  },
+  "publication_rule": "Only audited, traceable, and explicitly approved records may be counted as approved_training_rows."
+}
