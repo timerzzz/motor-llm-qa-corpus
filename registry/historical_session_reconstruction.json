@@ -1,0 +1,23 @@
+{
+  "record_version": "1.0.0",
+  "status": "unverified_reconstruction",
+  "source": "conversation-level historical reconstruction; original generated artifacts unavailable in current runtime",
+  "rule": "This file is an index of reported history, not evidence of verified rows, pass rates, or training approval.",
+  "reported_candidate_program_totals": [60000, 70000, 80000, 90000, 100000, 110000, 120000],
+  "reported_shards": [
+    {"shard_id": "D01-S001", "reported_rows": 10000, "reported_state": "semantic audit rejected for training candidate"},
+    {"shard_id": "D01-R2-S001", "reported_rows": 10000, "reported_state": "generated_unreviewed"},
+    {"shard_id": "D10-S001", "reported_rows": 10000, "reported_state": "generated_unreviewed"},
+    {"shard_id": "D12-S001", "reported_rows": 10000, "reported_state": "repaired; generated_unreviewed"},
+    {"shard_id": "D05-S001", "reported_rows": 10000, "reported_state": "template concentration reported"},
+    {"shard_id": "D07-S001", "reported_rows": 10000, "reported_state": "template concentration reported"},
+    {"shard_id": "D08-S001", "reported_rows": 10000, "reported_state": "generated_unreviewed"},
+    {"shard_id": "D06-S001", "reported_rows": 10000, "reported_state": "prompt concentration reported"},
+    {"shard_id": "D04-S001", "reported_rows": 10000, "reported_state": "local cluster threshold reported"},
+    {"shard_id": "D09-S001", "reported_rows": 10000, "reported_state": "local cluster threshold reported"},
+    {"shard_id": "D11-S001", "reported_rows": 10000, "reported_state": "local cluster threshold reported"},
+    {"shard_id": "D13-S001", "reported_rows": 10000, "reported_state": "generated_unreviewed"}
+  ],
+  "approved_training_rows": 0,
+  "verification_requirement": "Recover original JSONL, audit CSV, repair logs, manifests, and hashes; then rerun audits before any count enters verified_persisted_candidate_rows."
+}

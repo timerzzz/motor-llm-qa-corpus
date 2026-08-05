@@ -1,0 +1,10 @@
+{
+  "ledger_version": "1.0.0",
+  "program_target_rows": 710000,
+  "verified_persisted_candidate_rows": 0,
+  "approved_training_rows": 0,
+  "historical_reported_candidate_rows": 120000,
+  "historical_reported_progress_fraction": 0.169014,
+  "historical_reporting_status": "unverified_reconstruction",
+  "valid_progress_rule": "Only rows with persistent original shard, manifest and required audits may be counted as verified."
+}
