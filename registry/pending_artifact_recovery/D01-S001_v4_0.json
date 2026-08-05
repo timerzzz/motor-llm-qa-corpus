@@ -1,0 +1,23 @@
+{
+  "event_id": "D01-S001-LOCAL-GEN-REPORT-001",
+  "status": "reported_local_generation_artifact_unavailable",
+  "reported_generation": {
+    "shard_id": "D01-S001",
+    "version": "v4.0",
+    "reported_rows": 10000,
+    "reported_deterministic_pass_count": 10000,
+    "formula_scope": ["ns=120f/p", "s=(ns-n)/ns", "fr=sfs", "T=9550Pout/n", "V/f=U/f"]
+  },
+  "verification_result": {
+    "current_runtime_artifact_available": false,
+    "jsonl_sha256": null,
+    "audit_csv_sha256": null,
+    "manifest_sha256": null
+  },
+  "decision": "Do not add these 10000 rows to verified_persisted_candidate_rows. Recover the original JSONL, audit CSV and manifest, then verify hashes, row count and audit reproducibility before updating progress.",
+  "required_paths": [
+    "shards/D01-S001/D01-S001_10000_generated_unreviewed_v4_0.jsonl",
+    "audits/D01-S001/D01-S001_deterministic_audit_v4_0.csv",
+    "manifests/D01-S001/D01-S001_manifest_v4_0.json"
+  ]
+}
