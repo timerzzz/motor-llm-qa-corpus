@@ -1,0 +1,20 @@
+{
+  "shard_id": "D01-S001",
+  "row_count": 10000,
+  "status": "generated_unreviewed",
+  "seed": 20260817,
+  "files": {
+    "jsonl_sha256": "d996ceddda11ba18d01a4452645cb6dfed76d6daa6ac7cd2e0a3f26b7dee9c28",
+    "audit_sha256": "876597e61eaa31222d47367e1d425864f9471fc6e40e423a4304fce01ffaff93"
+  },
+  "deterministic_audit": {
+    "pass_count": 10000,
+    "fail_count": 0
+  },
+  "pending": [
+    "label_blind_diversity",
+    "corpus_duplicate_leakage",
+    "cross_domain_contradiction",
+    "expert_review"
+  ]
+}
