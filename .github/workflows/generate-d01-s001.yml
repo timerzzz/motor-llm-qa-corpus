@@ -1,0 +1,23 @@
+name: Generate D01-S001 candidates
+on:
+  push:
+    branches: [main]
+    paths: ['tools/generate_d01_s001.py', '.github/workflows/generate-d01-s001.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python tools/generate_d01_s001.py --out generated/D01-S001 --rows 10000 --seed 20260817
+      - run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add generated/D01-S001
+          git diff --cached --quiet || git commit -m 'data: generate D01-S001 candidate artifacts'
+          git push
